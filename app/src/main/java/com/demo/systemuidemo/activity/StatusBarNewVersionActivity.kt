@@ -7,6 +7,7 @@ import com.demo.systemuidemo.R
 import com.demo.systemuidemo.SystemUIManager
 import kotlinx.android.synthetic.main.activity_statusbarnewversion.float_hide_status_bar
 import kotlinx.android.synthetic.main.activity_statusbarnewversion.normal_hide_status_bar
+import kotlinx.android.synthetic.main.activity_statusbarnewversion.show_status_bar
 
 /**
  *
@@ -21,6 +22,7 @@ class StatusBarNewVersionActivity:AppCompatActivity() ,View.OnClickListener{
     private fun initView(){
         normal_hide_status_bar.setOnClickListener (this )
         float_hide_status_bar.setOnClickListener (this )
+        show_status_bar.setOnClickListener (this )
     }
     override fun onClick(view: View) {
         when(view.id){
@@ -29,6 +31,9 @@ class StatusBarNewVersionActivity:AppCompatActivity() ,View.OnClickListener{
             }
             R.id.float_hide_status_bar->{
                 SystemUIManager.setStatusFloatStyle(window)
+            }
+            R.id.show_status_bar->{
+              SystemUIManager.clearStyle(window)
             }
         }
     }

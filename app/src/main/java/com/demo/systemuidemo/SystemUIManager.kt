@@ -1,5 +1,6 @@
 package com.demo.systemuidemo
 
+import android.annotation.SuppressLint
 import android.view.View
 import android.view.Window
 
@@ -7,6 +8,7 @@ import android.view.Window
  *
  * 管理系统UI,显示与隐藏NavigationBar 和StatusBar
  */
+@SuppressLint("InlinedApi")
 object SystemUIManager {
 
     /**

@@ -23,4 +23,12 @@
         android:text="浮层隐藏StatusBar"
         android:layout_alignParentRight="true"
         android:layout_height="wrap_content" />
+
+  <Button
+        android:id="@+id/show_status_bar"
+        android:layout_width="wrap_content"
+        android:text="显示StatusBar"
+        android:layout_below="@id/normal_hide_status_bar"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
